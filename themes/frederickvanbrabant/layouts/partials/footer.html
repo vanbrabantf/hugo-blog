@@ -50,19 +50,30 @@
         ga('send', 'pageview');
     
     </script>
-    <script type="application/ld+json">
+<script type="application/ld+json">
     {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "name": "Frederick Vanbrabant",
-      "url": "http://www.frederickvanbrabant.com",
-      "sameAs": [
-        "https://twitter.com/maybeFrederick",
-        "https://www.linkedin.com/in/frederickvanbrabant/",
-        "https://github.com/vanbrabantf",
-        "https://symposiumapp.com/u/frederick",
-        "http://www.speakersbase.com/frederick-vanbrabant"
-      ]
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "{{ .Site.BaseURL }}"
+        },
+        "articleSection" : "{{ .Section }}",
+        "name" : "{{ .Title }}",
+        "headline" : "{{ .Title }}",
+        "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
+        "inLanguage" : "en-US",
+        "author" : "Frederick Vanbrabnt",
+        "creator" : "Frederick Vanbrabnt",
+        "publisher": "Frederick Vanbrabnt",
+        "accountablePerson" : "Frederick Vanbrabnt",
+        "copyrightHolder" : "Frederick Vanbrabnt",
+        "copyrightYear" : "{{ .Date.Format "2006" }}",
+        "datePublished": "{{ .Date }}",
+        "dateModified" : "{{ .Date }}",
+        "url" : "{{ .Permalink }}",
+        "wordCount" : "{{ .WordCount }}",
+        "keywords" : [ {{ if isset .Params "tags" }}{{ range .Params.tags }}"{{ . }}",{{ end }}{{ end }}"Blog" ]
     }
     </script>
     
