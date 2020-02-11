@@ -44,7 +44,7 @@ As said in the previous chapter, you can't build a product in a vacuum. You need
 
 On the other side, keeping acquiring technical debt is also not a way forward. You will, indeed have a quick start. Implement features in days instead of weeks. ... till you can't anymore. Just like financial debt, technical debt will eventually catch up with you. And it can end your business just as quickly. It's great to have a product that's a perfect market fit, but if you can't keep up with your competitors cause your application is too slow, or features can't be implemented quickly enough due to the technical mess, you will lose out.
 
-So treat that technical debt as your would financial debt. Use it to invest it into your project. But keep track of it and pay it off. I would recommend [this post](http://verraes.net/2020/01/wall-of-technical-debt/) from [Mathias Verraes](https://twitter.com/mathiasverraes) on how you can do this.
+So treat that technical debt as you would financial debt. Use it to invest it into your project. But keep track of it and pay it off. I would recommend [this post](http://verraes.net/2020/01/wall-of-technical-debt/) from [Mathias Verraes](https://twitter.com/mathiasverraes) on how you can do this.
 
 ![XKCD comic about good code](https://imgs.xkcd.com/comics/good_code.png)
 
